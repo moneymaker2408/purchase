@@ -1,15 +1,15 @@
 const rootEl = document.getElementById('root');
 
 rootEl.innerHTML = `
-<form data-id="purchase-add-form">
-    <label for="purchase-input-amount">Сумма</label>
-    <input id="purchase-input-amount" data-id="purchase-input-amount">
-    <label for="purchase-input-category">Категория</label>
-    <input id="purchase-input-category" data-id="purchase-input-category">
-    <button data-action="purchase-add">Добавить</button>
+<form data-id="purchase-add-form" class="purchase-add-form">
+    <label for="purchase-input-amount" class="text-secondary">Сумма</label >
+    <input id="purchase-input-amount" data-id="purchase-input-amount" class="alert alert-dark">
+    <label for="purchase-input-category" class="text-secondary">Категория</label>
+    <input id="purchase-input-category" data-id="purchase-input-category" class="alert alert-dark">
+    <button data-action="purchase-add" class="btn btn-secondary">Добавить</button>
 </form>
 <ul data-id="purchases-list"></ul>
-<div data-id="purchases-total">Сумма: 0</div>
+<div data-id="purchases-total" class="purchase-add-summ" >Сумма: 0</div>
 `;
 
 const purchaseAddFormEl = rootEl.querySelector('[data-id=purchase-add-form]');
